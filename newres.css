@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    background-image: url(image/background.jpg);
+    background-color: #f1f1f1;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.first {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.mag {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.second {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 170px;
+}
+
+.days {
+    display: inline-block;
+}
+
+.split {
+    border: 3px solid #fff;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#co {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 80px;
+    padding-top: 50px;
+
+}
+
+#our {
+    font-size: 25px;
+    margin-left: 80px;
+    padding-top: 50px;
+
+}
+
+#bld {
+    font-weight: bolder;
+}
+
+#folo {
+    margin-top:-0.7em;
+}
+
+#rect {
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: 50px;
+    display: inline-block;
+
+}
+
+#rects {
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 50%;
+
+}
+
+#subscribe {
+    margin-left: 80px;
+    color: #fff;
+    width: 58%;
+    padding: 10px 5px;
+    background-color: rgb(74, 188, 74);
+    font-weight: bold;
+
+}
+
+#subscribe:hover {
+    background-color: #9e9e9e;
+}
+
+#worry {
+    margin-left: 80px;
+    color: rgba(0, 0, 0, 0.437);
+    font-size: 14px;
+}
+
+.connect {
+    margin-left: 80px;
+}
+
+#face, #twit, #yout {
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin-right: 1vw;
+    border-radius: 50%;
+    color: white;
+}
+
+#face {
+    background-color: rgb(34, 34, 237);
+}
+
+#twit {
+    background-color: rgb(14, 201, 253);
+    border: 1px solid rgb(14, 201, 253);
+}
+
+#yout {
+    background-color: red;
+    border: 1px solid red;
+}
