@@ -33,11 +33,11 @@ section {
 }
 
 .split {
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.2) ;
     text-align: center;
-    padding: 30px 30px;
+    padding: 40px 40px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 100px;
     font-size: 25px;
     font-weight: bolder;
 }
@@ -69,7 +69,7 @@ section {
     font-size: 14px;
     margin-left: 80px;
     margin-top: 50px;
-    /* display: inline-block; */
+    display: inline-block;
 
 }
 
@@ -77,8 +77,8 @@ section {
     font-size: 14px;
     margin-left: 80px;
     margin-top: 10px;
-    /* display: inline-block; */
-    width: 50%;
+    display: inline-block;
+    /* width: 50%; */
 
 }
 
@@ -109,8 +109,8 @@ section {
 #face, #twit, #yout {
     border: 1px solid black;
     padding: 10px 10px;
-    margin-right: 1vw;
-    border-radius: 50%;
+    margin-right: 10px;
+    border-radius: 50px;
     color: white;
 }
 
@@ -128,17 +128,89 @@ section {
     border: 1px solid red;
 }
 
-.ooo{
+.ooo {
+    height: 30px;
     width: 370px;
-    height: 40px;
+
 }
 
-/**media queries styling**/
-@media screen and (max-width: 480px){
-    #co, #our, #rect, #rects, #worry, #subscribe, #connect{
+/** media queries styling **/
+@media screen and (max-width:480px) {
+    #co, #our, #rect, #rects, #worry, #subscribe {
         margin-left: 20px;
     }
-    .ooo{
-        width: 100%;
+
+    #co {
+        font-size: 25px;
     }
+
+    #our {
+        font-size: 15px;
+    }
+
+    .ooo {
+        width: 160%;
+    }
+
+    #subscribe {
+        max-width: 85%;
+        margin-right: 10%;
+    }
+
+    #worry {
+        font-size: 10px;
+        margin-top: 30px;
+    }
+
+    .connect {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    #co, #our {
+       padding-top: 0px;
+       margin-top: 20px;
+
+    }
+
+    #rect {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    #rects {
+        margin-top: -10px;
+        font-size: 12px;
+    }
+
+
+    #subscribe {
+        margin-top: -5px;
+        height: 30px;
+        vertical-align: middle;
+        padding: 0px;
+        width: 72%;
+    }
+
+    .second {
+        padding-left: 0px;
+        color: #fff;
+        padding-top: 10px;
+    }
+
+    .disp {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .split {
+        border: 3px solid rgba(255, 255, 255, 0.2) ;
+        text-align: center;
+        padding: 40px 40px;
+        margin: 20px;
+        border-radius: 100px;
+        font-size: 20px;
+        font-weight: bolder;
+        margin-top: 0px;
+    }
+
 }
