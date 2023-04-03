@@ -7,7 +7,7 @@ section {
     background-image: url(image/background.jpg);
     background-color: #f1f1f1;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -44,7 +44,7 @@ section {
 
 #co {
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 900;
     margin-left: 80px;
     padding-top: 50px;
 
@@ -88,11 +88,14 @@ section {
     padding: 10px 5px;
     background-color: rgb(74, 188, 74);
     font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgb(74, 188, 74);
 
 }
 
 #subscribe:hover {
     background-color: #9e9e9e;
+    border-color: #9e9e9e;
 }
 
 #worry {
@@ -128,11 +131,30 @@ section {
 }
 
 .ooo {
-    height: 30px;
+    height: 50px;
     width: 370px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(153, 153, 153, 0.5);
 
 }
-
+.ooo::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+    color: #999999;
+}
+.ooo:active, .ooo:focus, .ooo:focus-visible {
+    border-color: rgb(74, 188, 74) !important;
+}
+.ooo[type=text]:focus, .ooo[type=text]:focus-visible {
+    border-color: rgb(74, 188, 74) !important;
+}
+.padding-left-0 {
+    padding-left: 0px;
+}
+.padding-right-0 {
+    padding-right: 0px;
+}
 /** media queries styling **/
 @media screen and (max-width:480px) {
     #co, #our, #rect, #rects, #worry, #subscribe {
@@ -140,12 +162,10 @@ section {
     }
 
     #co {
-        font-size: 25px;
+        font-size: 40px;
     }
 
-    #our {
-        font-size: 15px;
-    }
+    
 
     .ooo {
         width: 160%;
@@ -170,6 +190,9 @@ section {
        margin-top: 20px;
 
     }
+    #co {
+        padding-top: 1.2em;
+    }
 
     #rect {
         margin-top: 20px;
@@ -187,8 +210,7 @@ section {
 
     #subscribe {
         margin-top: -5px;
-        height: 30px;
-        vertical-align: middle;
+        height: 45px;
         padding: 0px;
         width: 322px;
     }
@@ -217,10 +239,16 @@ section {
     
     .first {
         background-color: #fff;
-        margin-left: -20px;
-        margin-right: -50px;
-        height: 100vh;
+        height: 100%;
+        padding-bottom: 50px;
     }
+    .ooo::placeholder {
+        font-weight: 500;
+    }
+    .sm-mt-10 {
+      margin-top: 10px;
+    }
+   
 
 }
 
